@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>threedot.in</title>
+<title>ThreeDot</title>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin: 0; background-color: rgb(50, 50, 53);}
+.mySlides {display: none;}
+
+img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  padding: 30px 0px;
+
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: Left;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:  rgb(50, 50, 53);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media screen and (max-width: 3000px) {
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 15px;
+ }
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.text-spec{
+  text-align: center;
+  color:bisque;
+}
+
+</style>
+</head>
+<body>
+  
+
+<div class="navbar" style="max-width:100%">
+  
+  <a href=contact.html>Contact</a>
+  <a href=about.html>About Us</a>
+  <a href=products.html>Products</a>
+  <a href=service.html>Service</a>
+  <a href=index.html>Home</a>
+</div>
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<img src="asset/home1.jpg" style="width:100%">
+<div class="text">Put sun into work with no worries for Electricit bill.</div>
+</div>
+
+<div class="mySlides fade">
+<img src="asset/home2.jpg" style="width:100%">
+<div class="text">Sit and relax while sun does the work.</div>
+</div>
+
+<div class="mySlides fade">
+<img src="asset/home3.jpg" style="width:100%">
+<div class="text">Solar is not about fashion its about survival.</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<div>
+  <h1 class="text-spec" style="font-size: 1.5em;">
+    Welcome to Three Dot.
+</h1>
+  </div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

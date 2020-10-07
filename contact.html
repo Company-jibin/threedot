@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>threedot.in</title>
+<title>ThreeDot</title>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin: 0; background-color: rgb(50, 50, 53);}
+.mySlides {display: none;}
+
+.navbar {
+  overflow: hidden;
+  background-color:  rgb(50, 50, 53);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media screen and (max-width: 3000px) {
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 15px;
+ }
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(50, 50, 53);;
+  padding: 10px;
+  text-emphasis-color: bisque;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  height:fit-content;
+  margin-top: 6px;
+  padding: 20px;
+}
+.column1 {
+  float: left;
+  width: 35%;
+  height:40px;
+  margin-top: 6px;
+  padding: 25px;
+  text-emphasis-color: bisque;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: fit-content;
+    margin-top: 0;
+  }
+}
+
+.text-spec{
+  text-align: center;
+  color:bisque;
+  
+}
+</style>
+</head>
+<body>
+  
+
+<div class="navbar" style="max-width:100%">
+  
+  <a href=contact.html>Contact</a>
+  <a href=about.html>About Us</a>
+  <a href=products.html>Products</a>
+  <a href=service.html>Service</a>
+  <a href=index.html>Home</a>
+</div>
+<br>
+
+<div class="container">
+    <div class= "text-spec" style="text-align:left">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <image src="asset/home3.jpg">
+      </div>
+      <div class="column1">
+        <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+        action="https://script.google.com/macros/s/AKfycbwrH5pB70Xm08p66cTVJ6aEYOeVT-BZTGZdWzWY/exec">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Mail ID</label>
+          <input type="text" id="email" name="email" placeholder="Your mail id..">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" placeholder="Your country..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html> 
