@@ -70,10 +70,10 @@ img {vertical-align: middle;}
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+/*   background-color: #333;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100%; */
 }
 
 .navbar a {
